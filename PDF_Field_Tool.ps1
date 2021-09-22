@@ -136,7 +136,7 @@ $SubmitButton.Add_Click({
 	$FileName = "Testing - $GetDate"
 
 	#Initialize PDFWriter to write our modified PDF to. Needs to be different name than above
-	$Writer = [iText.Kernel.Pdf.PdfWriter]::new("C:\Users\kody.oneill\Documents\$FileName.pdf")
+	$Writer = [iText.Kernel.Pdf.PdfWriter]::new(#output file path)
 
 	#Now we generate a PdfDocument object to tie our PdfReader and PdfWriter together and allow us to start our work
 	$NewHirePdfDoc = [iText.Kernel.Pdf.PdfDocument]::new($Reader, $Writer)
