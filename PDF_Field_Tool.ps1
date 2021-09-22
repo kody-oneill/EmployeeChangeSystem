@@ -93,7 +93,7 @@ $LoggedOnUser = $LoggedOnUser.Split("\")
 $LoggedOnUser = $LoggedOnUser[1] 
 
 #Import Json configuration file
-$JsonFilePath = Get-Content -Raw -Path "C:\Users\$LoggedOnUser\OneDrive - Proto Labs, Inc\Employee Change\EmployeeChangeSystem\EmployeeChangeSystemConfiguration.json"
+$JsonFilePath = Get-Content -Raw -Path #Path to JSON Cofnig file
 $JsonFile = $JsonFilePath | ConvertFrom-Json
 
 #Pulling data from file
