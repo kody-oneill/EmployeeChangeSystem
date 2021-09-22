@@ -86,25 +86,19 @@ $Form1.Controls.Add($ResultsTextBox)
 $Form1.Name = "Form1"
 $Form1.Text = "PDF Field Tool"
 
-
-#Setting global variables
-$LoggedOnUser = [System.Security.Principal.WindowsIdentity]::GetCurrent().Name
-$LoggedOnUser = $LoggedOnUser.Split("\")
-$LoggedOnUser = $LoggedOnUser[1] 
-
 #Import Json configuration file
 $JsonFilePath = Get-Content -Raw -Path #Path to JSON Cofnig file
 $JsonFile = $JsonFilePath | ConvertFrom-Json
 
 #Pulling data from file
 
-$CommonLoggingCore = $JsonFile[0].OneDriveFilePathStart+$LoggedOnUser+$JsonFile[0].CommonLoggingCorePath
-$CommingLogging = $JsonFile[0].OneDriveFilePathStart+$LoggedOnUser+$JsonFile[0].CommonLoggingPath
-$iTextIO = $JsonFile[0].OneDriveFilePathStart+$LoggedOnUser+$JsonFile[0].iTextIOPath
-$iTextKernal = $JsonFile[0].OneDriveFilePathStart+$LoggedOnUser+$JsonFile[0].iTextKernalPath
-$iTextForm = $JsonFile[0].OneDriveFilePathStart+$LoggedOnUser+$JsonFile[0].iTextFormPath
-$iTextLayout = $JsonFile[0].OneDriveFilePathStart+$LoggedOnUser+$JsonFile[0].iTextLayoutPath
-$BouncyCastle = $JsonFile[0].OneDriveFilePathStart+$LoggedOnUser+$JsonFile[0].iTextBouncyCastlePath
+$CommonLoggingCore = $JsonFile[0].CommonLoggingCorePath
+$CommingLogging = $JsonFile[0].CommonLoggingPath
+$iTextIO = $JsonFile[0].iTextIOPath
+$iTextKernal = $JsonFile[0].iTextKernalPath
+$iTextForm = $JsonFile[0].iTextFormPath
+$iTextLayout = $JsonFile[0].iTextLayoutPath
+$BouncyCastle = $JsonFile[0].iTextBouncyCastlePath
 
 #Adding necessary dll's
 Add-Type -Path $CommonLoggingCore
