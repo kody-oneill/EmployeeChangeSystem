@@ -1,0 +1,26 @@
+{
+    "EmployeeChangeFolderPath" : "",
+    "CommonLoggingCorePath" : "",
+    "CommonLoggingPath" : "",
+    "iTextIOPath" : "",
+    "iTextKernalPath" : "",
+    "iTextFormPath" : "",
+    "iTextLayoutPath" : "",
+    "iTextBouncyCastlePath" : "",
+    "NewHireDefaultPDFPath" : "",
+    "NewHirePDFOutputPath" : "",
+    "TransferDefaultPDFPath" : "",
+    "TransferPDFOutputPath" : "",
+    "TerminationDefaultPDFPath" : "",
+    "TermiationPDFOutputPath" : "",
+    "LocationSpecificApprover1" : "",
+    "LocationSpecificApprover2" : "",
+    "LocationSpecificDefault" : "",
+    "HelpdeskEmail" : "",
+    "EmployeeChangeLogPath" : "",
+    "ApprovalCSVFilePath" : "",
+    "DefaultPassword" : "",
+    "RelayServer" : "",
+    "SMTPServer" : ""
+
+}
